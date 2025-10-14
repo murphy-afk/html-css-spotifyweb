@@ -53,16 +53,18 @@ main {
   overflow: auto;
 }
 
+.content-container {
+  overflow: auto;
+}
 
-.recently-played {
+.section-title {
   height: 3em;
   border: 1px solid black;
   background-color: rgb(118, 77, 156);
   overflow: auto;
 }
 
-.songs {
-  height: 100%;
+.songs-container {
   background-color: rgb(55, 39, 70);
   overflow: auto;
   display: flex;
@@ -70,6 +72,7 @@ main {
   justify-content: space-around;
   row-gap: 2em;
   padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 .song-card {
@@ -79,6 +82,7 @@ main {
   background-color: rgb(153, 214, 193);
   overflow: auto;
 }
+
 
 .footer {
   width: 100%;
