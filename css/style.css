@@ -83,6 +83,10 @@ main {
   overflow: auto;
 }
 
+.song-card.artist-profile {
+  border-radius: 50%;
+}
+
 
 .footer {
   width: 100%;
