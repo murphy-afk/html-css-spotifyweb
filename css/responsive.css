@@ -11,7 +11,7 @@
 
 @media screen and (min-width:700px) {
   .song-card {
-    width: 20%;
+    width: calc((100% / 5) - 20px + 20px / 5);
   }
 
   .songs-container {
@@ -26,6 +26,6 @@
 
 @media screen and (min-width:1100px) {
   .song-card {
-    width: 10%;
+    width: calc((100% / 6) - 20px + 20px / 6);
   }
 }
