@@ -165,7 +165,7 @@ ul {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  
+
 }
 
 
@@ -173,11 +173,18 @@ ul {
   overflow: auto;
 }
 
-.section-title {
+.section-heading {
   height: 3em;
   border: 1px solid black;
   overflow: auto;
+}
+
+.section-title {
   color: white;
+}
+
+.section-subtitle {
+  color: lightgray;
 }
 
 .songs-container {
@@ -213,11 +220,12 @@ ul {
 
 .song-card.artist-profile {
   border-radius: 50%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
 }
 
 .bottom-section {
-  padding-bottom: 120px;
-  /* footer height + 20px */
+  padding-bottom: calc(var(--footer-height) + 20px);
 }
 
 
