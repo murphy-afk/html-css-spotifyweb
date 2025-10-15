@@ -14,8 +14,11 @@ img {
 /* ROOT  */
 
 :root {
-  --footer-height: 100px
+  --footer-height: 100px;
+  --navbar-width: 50px;
 }
+
+/* GENERAL */
 
 .wrapper {
   width: 100%;
@@ -27,8 +30,14 @@ main {
   height: 100%;
 }
 
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* ********************+ */
+
 .navbar {
-  background-color: rgb(70, 66, 66);
+  background-color: rgb(0, 0, 0);
   flex-shrink: 0;
   width: 50px;
   max-width: 200px;
@@ -120,30 +129,45 @@ ul {
   width: 100%;
   padding-left: 50px;
   /* navbar width  */
+  background-color: rgb(20, 25, 34);
 }
 
 .header {
   height: 80px;
-  background-color: rgb(79, 115, 103);
+  background-color: rgb(8, 11, 18);
   overflow: auto;
   position: fixed;
+  width: calc(100% - var(--navbar-width));
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.btn {
+  padding: 0.8em 2em;
+  border: 2px solid white;
+  color: white;
+  border-radius: 2em;
+  text-decoration: none;
+  display: block;
+  margin-right: 10px;
+  font-weight: 600;
 }
 
 .categories {
-  padding-top: 80px;
+  padding-top: 100px;
   /* header height  */
-  height: 40px;
-  background-color: rgb(90, 90, 140);
+  height: 200px;
   border: 1px solid black;
-  overflow: auto;
 }
 
-.explore {
-  height: 40px;
-  background-color: rgb(109, 109, 145);
-  border: 1px solid black;
-  overflow: auto;
+.categories-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  
 }
+
 
 .content-container {
   overflow: auto;
@@ -152,28 +176,38 @@ ul {
 .section-title {
   height: 3em;
   border: 1px solid black;
-  background-color: rgb(118, 77, 156);
   overflow: auto;
+  color: white;
 }
 
 .songs-container {
-  background-color: rgb(55, 39, 70);
   overflow: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   row-gap: 2em;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding: 2em;
 }
 
 .song-card {
   width: calc((100% / 2) - 20px + 20px / 2);
-  /* calc(100% / 2 - (10px * 1) / 2 )*/
-  aspect-ratio: 1 / 1;
   border: 1px solid black;
-  background-color: rgb(153, 214, 193);
-  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.song-image {
+  aspect-ratio: 1 / 1;
+}
+
+.song-title {
+  color: white;
+  text-align: center;
+}
+
+.artist-name {
+  color: lightgrey;
 }
 
 .song-card.artist-profile {

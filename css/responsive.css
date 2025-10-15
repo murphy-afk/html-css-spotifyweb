@@ -2,6 +2,10 @@
 
 /* mobile large */
 @media screen and (min-width:600px) {
+  :root {
+    --navbar-width: 100px;
+  }
+
   .navbar {
     width: 100px;
   }
