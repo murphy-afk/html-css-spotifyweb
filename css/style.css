@@ -94,6 +94,10 @@ main {
   border-radius: 50%;
 }
 
+.bottom-section {
+  padding-bottom: 120px; /* footer height + 20px */
+}
+
 
 .footer {
   width: 100%;
