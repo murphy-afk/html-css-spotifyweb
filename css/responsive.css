@@ -3,8 +3,15 @@
 /* mobile large */
 @media screen and (min-width:600px) {
   .navbar {
-    width: 10em;
+    width: 100px;
   }
+
+  .main-content {
+    padding-left: 100px;/* navbar width  */
+  }
+
+  /* .header {
+  } */
 }
 
 /* tablet  */
@@ -12,6 +19,7 @@
 @media screen and (min-width:700px) {
   .song-card {
     width: calc((100% / 5) - 20px + 20px / 5);
+     /* calc(100% / 5 - (10px * 4) / 5 )*/
   }
 
   .songs-container {
@@ -27,5 +35,6 @@
 @media screen and (min-width:1100px) {
   .song-card {
     width: calc((100% / 6) - 20px + 20px / 6);
+     /* calc(100% / 6 - (10px * 5) / 6 )*/
   }
 }
