@@ -208,6 +208,7 @@ ul {
 
 .artist-name {
   color: lightgrey;
+  text-align: center;
 }
 
 .song-card.artist-profile {
