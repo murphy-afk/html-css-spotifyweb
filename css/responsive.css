@@ -7,11 +7,22 @@
   }
 
   .main-content {
-    padding-left: 100px;/* navbar width  */
+    padding-left: 100px;
+    /* navbar width  */
   }
 
-  /* .header {
-  } */
+  .navbar-top,
+  .navbar-bottom {
+    display: none;
+  }
+
+  .navbar.navbar-lg {
+    display: flex;
+  }
+
+  .navbar-section {
+    align-items: flex-start;
+  }
 }
 
 /* tablet  */
