@@ -20,6 +20,13 @@ img {
 
 /* GENERAL */
 
+a {
+  text-decoration: none;
+  color: rgb(163, 163, 163);
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+}
+
 .wrapper {
   width: 100%;
   height: calc(100vh -100px);
@@ -32,7 +39,7 @@ main {
 
 body {
   font-family: "Montserrat", sans-serif;
-  color: white;
+  color: rgb(163, 163, 163);
 }
 
 /* ********************+ */
@@ -62,7 +69,7 @@ body {
 }
 
 .navbar-bottom {
-  padding-bottom: var(--footer-height);
+  padding-bottom: calc(var(--footer-height) + 5px);
 }
 
 .navbar-icon-mobile {
@@ -71,9 +78,12 @@ body {
 
 .icon-medium {
   width: 25px;
+  opacity: 0.7;
+  padding-right: 5px;
 }
 
 .icon-small {
+  opacity: 0.7;
   width: 15px;
 }
 
@@ -95,21 +105,42 @@ body {
 }
 
 /* NAVBAR > 600PX  */
+/* fix navbar */
 
 .logo-lg {
   height: 50px;
 }
 
+.navbar-lg-top {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.navbar-lg-center {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.create-playlist {
+  display: flex;
+  align-items: center;
+}
+
 .navbar-lg-bottom {
-  padding-bottom: var(--footer-height);
+  padding-bottom: calc(var(--footer-height) + 5px);
 }
 
 .nav-section {
-  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
+}
+
+.fa-square-plus {
+  font-size: 2rem;
 }
 
 .heading-nav {
@@ -118,7 +149,13 @@ body {
 }
 
 ul {
-  color: white;
+  list-style: none;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 /* ***************************************** */
@@ -149,7 +186,7 @@ ul {
   color: white;
   border-radius: 2em;
   text-decoration: none;
-  display: block;
+  display: inline-block;
   margin-right: 10px;
   font-weight: 600;
 }
@@ -183,9 +220,9 @@ ul {
   color: white;
 }
 
-.section-subtitle {
+/* .section-subtitle {
   color: lightgray;
-}
+} */
 
 .songs-container {
   overflow: auto;
@@ -250,6 +287,7 @@ ul {
 .now-playing {
   display: flex;
   gap: 5px;
+  overflow: hidden;
 }
 
 .np-description {
@@ -268,6 +306,8 @@ ul {
   gap: 20px;
   align-items: center;
   justify-content: space-around;
+  min-width: 150px;
+  flex-grow: 2;
 }
 
 .fa-circle-play {
