@@ -306,13 +306,44 @@ hr {
   height: 100%;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 5px;
   align-items: center;
   justify-content: space-around;
   min-width: 150px;
   flex-grow: 2;
 }
+.player-actions {
+  font-size: 1.5rem;
+}
 
 .fa-circle-play {
-  font-size: 1.5rem;
+  font-size: 2rem;
+}
+
+.song-progress-bar {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  width: 100%;
+  justify-content: center;
+}
+
+.progress-bar {
+  width: 60%;
+  position: relative;
+}
+
+.bar-base {
+  height: 6px;
+  background-color: rgb(114 107 107);
+  border-radius: 2px;
+}
+
+.bar-progress {
+  height: 6px;
+  background-color: rgb(222, 222, 222);
+  width: 20%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
