@@ -158,6 +158,12 @@ ul {
   gap: 10px;
 }
 
+hr {
+  height: 1px;
+  background-color: white;
+  width: 80%;
+}
+
 /* ***************************************** */
 
 .main-content {
@@ -194,15 +200,16 @@ ul {
 .categories {
   padding-top: 100px;
   /* header height  */
-  height: 200px;
-  border: 1px solid black;
+  padding-bottom: 50px;
 }
 
 .categories-list {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-
+  gap: 20px;
+  justify-content: center;
+  padding: 1em;
 }
 
 
@@ -212,17 +219,14 @@ ul {
 
 .section-heading {
   height: 3em;
-  border: 1px solid black;
   overflow: auto;
 }
 
 .section-title {
   color: white;
+  padding-left: 1.5em;
 }
 
-/* .section-subtitle {
-  color: lightgray;
-} */
 
 .songs-container {
   overflow: auto;
@@ -235,7 +239,6 @@ ul {
 
 .song-card {
   width: calc((100% / 2) - 20px + 20px / 2);
-  border: 1px solid black;
   display: flex;
   flex-direction: column;
   align-items: center;
