@@ -29,7 +29,7 @@ a {
 
 .wrapper {
   width: 100%;
-  height: calc(100vh -100px);
+  height: calc(100vh - 50px);
 }
 
 main {
@@ -105,7 +105,6 @@ body {
 }
 
 /* NAVBAR > 600PX  */
-/* fix navbar */
 
 .logo-lg {
   height: 50px;
@@ -139,6 +138,16 @@ body {
   text-decoration: none;
 }
 
+.nav-section:hover {
+  color: white;
+}
+
+/* FIX  */
+.nav-section:active {
+  color: white;
+  border-left: 1px solid greenyellow;
+}
+/* **** */
 .fa-square-plus {
   font-size: 2rem;
 }
@@ -197,6 +206,10 @@ hr {
   font-weight: 600;
 }
 
+.btn:hover {
+  padding: 1.5em 2.5em;
+}
+
 .categories {
   padding-top: 100px;
   /* header height  */
@@ -219,12 +232,11 @@ hr {
 
 .section-heading {
   height: 3em;
-  overflow: auto;
+  padding-left: 1.5em;
 }
 
 .section-title {
   color: white;
-  padding-left: 1.5em;
 }
 
 
@@ -348,6 +360,10 @@ hr {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.bar-progress:hover {
+  background-color: rgb(255, 255, 255);
 }
 
 .media-volume {
